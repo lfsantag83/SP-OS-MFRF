@@ -3,7 +3,7 @@
 #########################################################################
 
 rm(list=ls())
-
+#Falta incluir libreria 
 library(fda)
 library(fda.usc)
 library(geoR)
@@ -175,7 +175,7 @@ legend(126.5,128.5,legend=ubicaciones,lwd=2,cex=0.55,col=rainbow(10))
 plotfit.fd(MPM10_1semana, argvals=1:nrow(MPM10_1semana),PM10_fd_Bspl,lwd=1,ylab=" ",col=rainbow(10))
 plotfit.fd(MPM10_1semana,PM10_fd_Bspl,lwd=1,ylab=" ",col=rainbow(10))
 
-#Bogot· Map
+#Bogot√° Map
 require(MASS)
 require(akima)
 require(gstat)
@@ -290,7 +290,7 @@ for(i in 1:ncol(combinaciones))
          tablaVar[i,]=c(i,varOK)
 }
 TablaVar=as.data.frame(tablaVar)
-colnames(tablaVar)=c("combinaciÛn","varianzaKO")
+colnames(tablaVar)=c("combinaci√≥n","varianzaKO")
 names(tablaVar)=tablaVar[,1]
 TablaVar=as.data.frame(tablaVar)
 attach(TablaVar)
